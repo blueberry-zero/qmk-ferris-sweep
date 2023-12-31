@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 		// row 2 right - left
 		// pinky	ring		middle		index		index+
-		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_ESC,
+		KC_RGHT,	KC_LEFT,	KC_UP,		KC_DOWN,	KC_ESC,
 		// index+	index		middle		ring		pinky
 		KC_ESC,		KC_LCTL,	KC_LSFT,	KC_LALT,	KC_LGUI,
 
