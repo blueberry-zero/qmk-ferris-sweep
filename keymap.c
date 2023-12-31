@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 		// row 4
 		// lthumb_i	lthumb_o	rthumb_o	rthumb_i
-		LT(KC_BSPC,1),	LT(KC_ENT,2),	LT(KC_TAB,3),	LT(KC_SPC,4)
+		LT(1, KC_BSPC),	LT(2, KC_ENT),	LT(3, KC_TAB),	LT(4, KC_SPC)
 	),
 	// Function Layer
 	[1] = LAYOUT_split_3x5_2(
