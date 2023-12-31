@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		// pinky	ring		middle		index		index+
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 		// index+	index		middle		ring		pinky
-		KC_PCSR,	KC_F4,		KC_F3,		KC_F2,		KC_F1,
+		KC_PSCR,	KC_F4,		KC_F3,		KC_F2,		KC_F1,
 
 		// row 2 right - left
 		// pinky	ring		middle		index		index+
@@ -43,25 +43,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		// pinky	ring		middle		index		index+
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 		// index+	index		middle		ring		pinky
-		PC_SCRL,	KC_F12,		KC_F11,		KC_F10,		KC_F9,
+		KC_SCRL,	KC_F12,		KC_F11,		KC_F10,		KC_F9,
 		
 		// row 4
 		// lthumb_i	lthumb_o	rthumb_o	rthumb_i
-		KC_TRANS,	KC_TRANS,	KC_TRANS,	KC_TRANS
+		KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS
 	),
-	// symbol layer
+	// symbol layer 2
 	[2] = LAYOUT_split_3x5_2(
 		// row 1 right - left
 		// pinky	ring		middle		index		index+
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 		// index+	index		middle		ring		pinky
-		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_ESC,
+		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 
 		// row 2 right - left
 		// pinky	ring		middle		index		index+
 		KC_RGUI,	KC_RALT,	KC_RSFT,	KC_RCTL,	KC_ESC,
 		// index+	index		middle		ring		pinky
-		KC_ESC,		KC_LCTL,	KC_LSFT,	KC_LALT,	KC_LGUI,
+		KC_ESC,		KC_RBRC,	KC_LBRC,	KC_SCLN,	KC_BSLS,
 
 		// row 3 right - left
 		// pinky	ring		middle		index		index+
@@ -71,31 +71,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		
 		// row 4
 		// lthumb_i	lthumb_o	rthumb_o	rthumb_i
-		KC_TRANS,	KC_TRANS,	KC_TRANS,	KC_TRANS
+		KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS
 	),
-	// number layer
+	// number/symbol layer 1
 	[3] = LAYOUT_split_3x5_2(
 		// row 1 right - left
 		// pinky	ring		middle		index		index+
-		KC_ESC,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
+		KC_9,		KC_8,		KC_7,		KC_MINS,	KC_PSLS,
 		// index+	index		middle		ring		pinky
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 
 		// row 2 right - left
 		// pinky	ring		middle		index		index+
-		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_ESC,
+		KC_3,		KC_2,		KC_1,		KC_0,		KC_ESC,
 		// index+	index		middle		ring		pinky
 		KC_ESC,		KC_LCTL,	KC_LSFT,	KC_LALT,	KC_LGUI,
 
 		// row 3 right - left
 		// pinky	ring		middle		index		index+
-		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
+		KC_6,		KC_5,		KC_4,		KC_EQL,		KC_NO,
 		// index+	index		middle		ring		pinky
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 		
 		// row 4
 		// lthumb_i	lthumb_o	rthumb_o	rthumb_i
-		KC_TRANS,	KC_TRANS,	KC_TRANS,	KC_TRANS
+		KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS
 	),
 	// nav layer
 	[4] = LAYOUT_split_3x5_2(
@@ -113,13 +113,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 		// row 3 right - left
 		// pinky	ring		middle		index		index+
-		KC_NO,		KC_NO,		KC_PGUP,	KC_PGDOWN,	KC_NO,
+		KC_NO,		KC_NO,		KC_PGUP,	KC_PGDN,	KC_NO,
 		// index+	index		middle		ring		pinky
 		KC_NO,		KC_NO,		KC_NO,		KC_NO,		KC_NO,
 		
 		// row 4
 		// lthumb_i	lthumb_o	rthumb_o	rthumb_i
-		KC_TRANS,	KC_TRANS,	KC_TRANS,	KC_TRANS
+		KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS
 	),
 
 };
