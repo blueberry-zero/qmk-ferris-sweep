@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 		// row 4
 		// rthumb_o     rthumb_i	      lthumb_i	      lthumb_o
-		LT(1, KC_DEL),	LT(2, KC_BSPC),	LT(3, KC_TAB),	LT(4, KC_SPC)
+		LT(1, KC_DEL),	LT(2, KC_BSPC),	LT(3, KC_SPC),	LT(4, KC_TAB)
 	),
   // 
 	// Function Layer
