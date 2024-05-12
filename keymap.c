@@ -24,6 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_NO,    KC_V,     KC_C,     KC_X,		  KC_Z,
 
 		// row 4
+    // on update update function for hold on other key press
 		// rthumb_o     rthumb_i	      lthumb_i	      lthumb_o
 		LT(1, KC_DEL),	LT(2, KC_BSPC),	LT(3, KC_SPC),	LT(4, KC_TAB)
 	),
@@ -126,6 +127,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
 
 };
+
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch(keycode) {
+        // layer transition hold on any combo
+        case LT(1, KC_DEL):
+        case LT(2, KC_BSPC):
+        case LT(3, KC_SPC):
+        case LT(4, KC_TAB):
+            return true;
+        // default tapping term behaviour
+        default:
+            return false;
+    }
+}
 
 #if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
