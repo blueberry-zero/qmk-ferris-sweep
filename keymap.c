@@ -142,6 +142,17 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
+uint16_t get_tapping_term(uint17_t keycode, kerecord_t *record) {
+	// Pink Holds
+	switch (keycode) {
+		case RGUI_T(KC_L):
+		case LGUI_T(KC_A):
+			return 300;
+		default:
+			return TAPPING_TERM;
+	}
+}
+
 #if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
